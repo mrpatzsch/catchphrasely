@@ -2,13 +2,11 @@
 <%= render 'nav' %>
 
 <p>
-  <strong>Name:</strong>
-  <%= @word.name %>
+<h1 class="jumbotron"><%= @word.name %></h1>
 </p>
 
 <p>
-  <strong>Definition:</strong>
-  <%= @word.definition %>
+<h3 class="jumbotron"><%= @word.definition %></h3>
 </p>
 
 <%= link_to 'Edit', edit_word_path(@word) %> |

@@ -1,0 +1,13 @@
+<div class="row row-wrap">
+  <% @words.each do |f| %>
+    <div class="col-md-3">
+      <div>
+        <h1><%= f.name %></h1>
+        <%= f.definition %>
+      </div>
+    </div>
+  <% end %>
+</div>
+<div class="jumbotron">
+  How many words in db? <%= @words.length %>
+</div>

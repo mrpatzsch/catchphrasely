@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root to: 'words#index'
+
+  get '/words/all' => 'words#all'
   resources :words
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

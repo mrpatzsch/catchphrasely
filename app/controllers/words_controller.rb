@@ -8,6 +8,10 @@ class WordsController < ApplicationController
     @randWord = @words.sample(1)
   end
 
+  def all
+    render json: Word.all
+  end
+
   def randomWord 
     @words = Word.all
   end
